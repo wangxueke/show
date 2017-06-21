@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我帅吗</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.demo{
+			width:655px;
+			margin:0 auto;
+		}
+		h1{
+			font-size:40px;
+		}
+		button{
+			margin-top:100px;
+			margin-left:20px;
+		}
+		#no{
+			position:absolute;
+			left:650px;
+			top:106px;
+		}
+	</style>
+</head>
+<body>
+		<div class = "demo">
+			  <h1>胡晶晶是不是世界上最美丽的女生？</h1>
+		      <button id = "yes">是</button>		   
+		      <button id = "no">不是</button>
+		</div>
+     <script type="text/javascript">
+     	var btn = document.getElementById('no')
+     	var btn1 = document.getElementById('yes')
+     	btn.onmouseenter = function () {
+     		btn.style.left = Math.random() * 800 + "px"
+     		btn.style.top = Math.random() * 600  +  "px"
+     	}
+     	btn1.onclick = function () {
+     		alert('眼光还可以')
+     	}
+
+     </script>
+
+</body>
+</html>
